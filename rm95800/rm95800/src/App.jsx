@@ -1,14 +1,14 @@
 import React from "react";
-import Produtos from "./components/Produtos"
+import Menu from "./components/Menu";
+import MainRoutes from "./routes/MainRoutes"
 
 export default function App(){
 
-    sessionStorage.setItem("userName","Yasmin")
-
     return(
         <div>
+            <Menu/>
             <h1>CONTROLE DE ACESSO</h1>
-            <Produtos />
+            <MainRoutes />
         </div>
 
 
