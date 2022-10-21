@@ -1,12 +1,14 @@
-import React from 'react'
+import React from "react";
+import { useEffect } from "react";
 
-export default function Produto(){
-    return(
-        <div>
-            <h1>PRODUTOS</h1>
+const verificar = sessionStorage.getItem("usuario-validado");
 
-            <p>Nome : {sessionStorage.getItem("userName")}</p>
-        
-        </div>    
-    )
+export default function Produto() {
+  useEffect(() => {
+    if (verificar == null) {
+      window.location = "/";
+    }
+  }, []);
+
+  return <div>Produto</div>;
 }
