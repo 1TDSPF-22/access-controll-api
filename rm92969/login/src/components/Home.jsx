@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 
 const verificar = sessionStorage.getItem("usuario-validado")
 
-function Home() {
+export default function Home() {
 
     useEffect(() =>{
         if(verificar == null){
@@ -22,4 +22,3 @@ function Home() {
     );
 }
 
-export default Home;

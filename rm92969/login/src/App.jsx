@@ -8,11 +8,12 @@ export default function App() {
     sessionStorage.setItem("userName","Vinícius")
 
   return (
-    <div>
+    <>
+        <Menu />
         <h1>Controle de Acesso</h1>
         <Menu/>
         <MainRoutes/>
-    </div>
+    </>
   )
 }
 
